@@ -1,40 +1,39 @@
-.banner {
-  background: #fff;
-  font-family: Lato, sans-serif;
+*{
+	box-sizing: border-box;
 }
-.navbar-nav-primary {
-  text-transform: uppercase;
+body {
+    background-color: #f8f6fa;
 }
-.navbar-form-search {
-  position: relative;
+.search-toggle {
+    position: absolute;
+    width: auto;
+    margin: 100px auto;
+    display: table;
 }
-.navbar-form-search .form-control {
-  width: 250px;
+.search-toggle input[type=text] {
+    position: relative;
+    padding: 15px 30px 15px 17px;
+    width: 48px;
+    height: 48px;
+    color: #333;
+    font-size: 17px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    transition: 0.5s ease;
+    background: #fff;
 }
-.navbar-form-search .btn {
-  border: 0;
-  background: transparent;
-  font-size: 18px;
+.search-toggle input[type=text]:hover {
+    width: 150px;
 }
-.navbar-form-search .btn:active, .navbar-form-search .btn:hover, .navbar-form-search .btn:focus {
-  color: #000;
-  outline: none;
-  box-shadow: none;
+.search-toggle input[type=text]:focus {
+	width: 300px;
 }
-.navbar-form-search .search-form-container {
-  text-align: right;
-  position: absolute;
-  width: 300px;
-  overflow: hidden;
-  background: #fff;
-  right: 60px;
-  top: 0;
-  z-index: 9;
-  transition: all 0.3s ease-in-out;
-}
-.navbar-form-search .search-form-container.hdn {
-  width: 0;
-}
-.navbar-form-search .search-form-container .search-input-group {
-  width: 300px;
+.search-toggle i {
+    position: relative;
+    left: -33px;
+   
+    top: 3px;
+    font-size: 20px;
+    color: #333;
 }
