@@ -1,4 +1,16 @@
+.info .container {
+	-webkit-transform: translateY(-5rem);
+	transform: translateY(-5rem);
+	z-index: 9999;
+	position: relative
+}
 
+@media (min-width: 992px) {
+	.info .container {
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%)
+	}
+}
 .navbar {
 	padding: .5rem 1rem
 }
